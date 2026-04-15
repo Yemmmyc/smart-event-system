@@ -1,0 +1,95 @@
+# 🏟️ Smart Event Experience System
+
+## 📌 Problem Statement
+Large-scale sporting venues face challenges such as:
+- Crowd congestion at entry/exit points  
+- Long waiting times at gates and facilities  
+- Poor real-time coordination of attendees  
+
+These issues reduce safety, efficiency, and overall attendee experience.
+
+---
+
+## 💡 Solution Overview
+The Smart Event Experience System improves stadium experiences by:
+
+- Monitoring crowd levels at gates in real time  
+- Providing smart route recommendations  
+- Sending live alerts to attendees  
+- Visualizing crowd data on an interactive dashboard  
+
+---
+
+## 🏗️ System Architecture
+
+```text
+User (Browser)
+   ↓
+Frontend (HTML/CSS/JS Dashboard)
+   ↓
+Backend API (Flask - Python)
+   ↓
+Crowd Monitoring + Alert Engine
+☁️ Google Cloud Deployment
+
+This project is deployed using Google Cloud Run, making it scalable and publicly accessible.
+
+🔗 Live API
+
+https://smart-event-system-api-107678960097.us-central1.run.app
+
+🚀 Deployment Steps
+Containerized backend using Docker
+Built using Google Cloud Build
+Stored container in Artifact Registry
+Deployed to Cloud Run
+Enabled public access
+🧩 Cloud Services Used
+Cloud Run → Backend hosting
+Cloud Build → Build automation
+Artifact Registry → Container storage
+📡 API Endpoints
+Endpoint	Description
+/	System status
+/crowd	Crowd simulation
+/alerts	Smart alerts
+💻 How to Run Locally
+Backend
+cd backend
+pip install -r requirements.txt
+python main.py
+Frontend
+cd frontend
+npx serve .
+
+Open:
+
+http://localhost:3000
+🚀 Key Features
+Real-time crowd simulation
+Smart gate recommendations
+Dynamic alert system
+Clean responsive dashboard
+📸 Screenshots
+Dashboard View
+
+Crowd Status View
+
+🔄 How It Works
+User opens dashboard
+Frontend calls backend API
+Backend generates crowd data
+Alerts are returned dynamically
+UI updates in real time
+📎 Repository
+
+https://github.com/Yemmmyc/smart-event-system
+
+🧠 Future Improvements
+AI-based crowd prediction
+Real-time IoT sensor integration
+WebSocket live updates
+Firebase database integration
+🏁 Conclusion
+
+This project demonstrates a cloud-native approach to improving real-world event experiences using Google Cloud and modern DevOps practices.
