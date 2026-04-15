@@ -2,78 +2,101 @@
 
 ## 📌 Problem Statement
 Large-scale sporting venues face challenges such as:
-- Crowd congestion
-- Long waiting times
-- Poor real-time coordination
+- Crowd congestion at entry/exit points
+- Long waiting times at gates and facilities
+- Poor real-time coordination of attendees
 
-These issues reduce attendee satisfaction and can pose safety risks.
+These issues reduce safety, efficiency, and overall attendee experience.
 
 ---
 
-## 💡 Solution
-The Smart Event Experience System improves the physical event experience by:
+## 💡 Solution Overview
+The Smart Event Experience System is a web-based platform that improves stadium experiences by:
 
-- Monitoring crowd levels in real time
-- Recommending less crowded entry points
-- Providing live alerts to attendees
-- Displaying information via a web dashboard
+- Monitoring crowd levels at gates in real time
+- Providing smart recommendations for less crowded routes
+- Sending live alerts to attendees
+- Visualizing crowd data on a dashboard
 
 ---
 
 ## 🏗️ System Architecture
+
 User (Browser)
 ↓
-Frontend (Dashboard UI)
+Frontend (HTML/CSS/JS Dashboard)
 ↓
-Backend API (Flask)
+Backend API (Flask - Python)
 ↓
-Crowd Data & Alerts
+Crowd Monitoring + Alert Engine
 
 ---
 
-## ☁️ Google Cloud Integration
+## ☁️ Google Cloud Architecture Mapping
 
-This solution is designed using Google Cloud services:
+This system is designed with Google Cloud in mind:
 
-- **Cloud Run** → Hosts backend APIs  
-- **Firestore** → Stores crowd and event data  
-- **Pub/Sub** → Handles real-time alerts  
-- **Firebase Hosting** → Hosts frontend dashboard  
+- Cloud Run → Hosts backend Flask API
+- Firestore → Stores crowd movement and event data
+- Pub/Sub → Handles real-time alert messaging
+- Firebase Hosting → Deploys frontend dashboard
+
+> NOTE: This project demonstrates cloud-native architecture design even when run locally.
 
 ---
 
 ## 💻 Development Environment
 
-This project was developed and tested using **Google Antigravity IDE**.
+- Built and tested using Google Antigravity IDE
+- Version control handled with Git & GitHub
+- Local development server used for testing before deployment simulation
 
 ---
 
-## ⚙️ How to Run the Project
+## ⚙️ How to Run
 
 ### Backend
+```bash
 cd backend
 pip install flask flask-cors
 python main.py
+```
 
 ### Frontend
+```bash
 cd frontend
 npx serve .
+```
 
-
-Then open:
+Open:
 http://localhost:3000
 
-
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- Real-time crowd monitoring
-- Dynamic alert system
+- Real-time crowd monitoring simulation
+- Dynamic alert generation
 - Smart gate recommendations
-- Modern dashboard UI
+- Responsive control dashboard UI
 
 ---
 
-## 📎 Repository Link
+## 📸 Screenshots
+
+Add your project screenshots here:
+
+```markdown
+![Dashboard](screenshots/dashboard_alerts.png)
+![Crowd Status](screenshots/crowd.png)
+```
+
+---
+
+## 📎 Repository
 https://github.com/Yemmmyc/smart-event-system
+
+---
+
+## 🧠 Final Note
+This project demonstrates a scalable smart city event monitoring solution designed for real-world cloud deployment scenarios.
