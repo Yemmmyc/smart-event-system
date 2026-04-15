@@ -87,8 +87,8 @@ http://localhost:3000
 Add your project screenshots here:
 
 ```markdown
-![Dashboard](./screenshots/dashboard_alerts.png)
-![Crowd Status](./screenshots/crowd.png)
+![Dashboard](screenshots/dashboard_alerts.png)
+![Crowd Status](screenshots/crowd.png)
 ```
 
 ---
