@@ -20,14 +20,15 @@ The **Smart Event Experience System** is a web-based platform designed to enhanc
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Architecture
+
 User (Browser)
 ↓
-Frontend (HTML/CSS/JS Dashboard)
+Frontend (HTML/CSS/JS)
 ↓
-Backend API (Flask - Python)
+Flask Backend API
 ↓
-Crowd Monitoring + Alert Engine
+Crowd + Alert Engine
 
 ---
 
@@ -89,8 +90,7 @@ cd backend
 pip install -r requirements.txt
 python main.py
 
-### 🔹 Frontend
-```bash
+Frontend
 cd frontend
 npx serve .
 ```
@@ -108,10 +108,6 @@ http://localhost:3000
 ⚡ Lightweight and fast UI
 
 ---
-
-## 📸 Screenshots
-
-Add your project screenshots here:
 
 ## 📸 Screenshots
 
