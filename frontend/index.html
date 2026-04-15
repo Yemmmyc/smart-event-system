@@ -1,4 +1,124 @@
-<h1>Live Event Dashboard</h1>
-<div id="data"></div>
+<!DOCTYPE html>
+<html>
 
-<script src="app.js"></script>y
+<head>
+    <title>Smart Stadium Control Center</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            background: rgba(30, 58, 138, 0.6);
+            backdrop-filter: blur(10px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #93c5fd;
+        }
+
+        pre {
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+
+        .alert-box {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            padding: 10px;
+            border-radius: 10px;
+            color: #fca5a5;
+            font-weight: bold;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: pulse 1.5s infinite;
+        }
+
+        .green {
+            background: #22c55e;
+        }
+
+        .red {
+            background: #ef4444;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.4);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>🏟️ Smart Stadium Control Center</header>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="title">
+                <span class="status-dot green"></span>
+                Crowd Monitoring System
+            </div>
+            <pre id="crowd"></pre>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <span class="status-dot red"></span>
+                Live Alerts
+            </div>
+            <div id="alerts" class="alert-box"></div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
