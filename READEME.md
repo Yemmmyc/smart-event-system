@@ -36,6 +36,17 @@ Crowd + Alert Engine
 
 This project is deployed on **Google Cloud Run**, making the backend scalable, serverless, and globally accessible.
 
+## ☁️ Google Cloud Integration
+
+This project uses:
+
+- Google Cloud Run → Backend hosting  
+- Cloud Build → Container build automation  
+- Artifact Registry → Container storage  
+- Cloud Logging → Request monitoring  
+
+The backend is deployed as a serverless containerized application.
+
 ### 🔗 Live API
 https://smart-event-system-api-107678960097.us-central1.run.app
 
@@ -48,6 +59,18 @@ https://smart-event-system-api-107678960097.us-central1.run.app
 3. Stored image in Artifact Registry  
 4. Deployed service to Cloud Run  
 5. Enabled public (unauthenticated) access  
+
+## 🔐 Security
+
+- HTTPS enabled via Cloud Run  
+- Controlled CORS access  
+- Structured API responses  
+
+## ⚡ Efficiency
+
+- Lightweight Flask API  
+- Fast JSON responses  
+- Optimized endpoint structure  
 
 ---
 
